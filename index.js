@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const app = express();
 app.use(bodyParser.json());
 
-mongoose.connect("mongodb+srv://test:test@cluster0.mlcnreq.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true });
+// mongoose.connect("mongodb+srv://test:test@cluster0.mlcnreq.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true });
 
 const bmiSchema = new mongoose.Schema({
   email: { type: String, required: true },
